@@ -12,7 +12,25 @@
     <body ng-controller="fusionchartsCtrl">
         <div class="container">
             <h1>FusionCharts e Angularjs</h1>
-            <p>This is a paragraph.</p>
+            <br />
+
+            <div class="col-md-6">
+                <table class="table">
+                    <tr>
+                        <td>Dia</td>
+                        <td>Valor</td>
+                    </tr>
+                    <tr ng-repeat="x in parametros">
+                        <td>{{ x.dia }}</td>
+                        <td>{{ x.valor }}</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="col-md-6">
+                <!-- <div fusioncharts width="700" height="400" type="column2d" datasource="{{ myDataSource }}"></div> -->
+            </div>
+
         </div>
         
         <script src="/js/angularjs/1.6.6/angular.min.js"></script>
