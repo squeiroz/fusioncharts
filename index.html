@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="fusioncharts">
     <head>
 		<meta charset="utf-8">
 		<meta name="author" content="contato@slim.eng.br">
@@ -9,13 +9,16 @@
 		
 		<link rel="stylesheet" href="/css/bootstrap/3.3.7/bootstrap.min.css">
     </head>
-    <body>
+    <body ng-controller="fusionchartsCtrl">
         <div class="container">
             <h1>FusionCharts e Angularjs</h1>
             <p>This is a paragraph.</p>
         </div>
         
         <script src="/js/angularjs/1.6.6/angular.min.js"></script>
-		<script src="/js/angularjs/1.6.6/angular-animate.js"></script>
+        <script src="/js/angularjs/1.6.6/angular-animate.js"></script>
+        
+        <script src="js/app.js"></script>
+        <script src="js/controller.js"></script>
     </body>
 </html>
